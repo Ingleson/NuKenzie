@@ -1,7 +1,7 @@
 import './style.css';
 import Trash from '../../assets/trash.png'
 
-function List({listTransictions, filterTransictions, setFilter}) {
+function List({listTransictions, filterTransictions, setFilter, deleteItem}) {
 
   return(
     <aside>
@@ -22,7 +22,7 @@ function List({listTransictions, filterTransictions, setFilter}) {
             </div>
             <div className='value-btn-box'>
             <span>  R$ {type === 'Saída' ? '-' : ''}{value} </span>
-            <button><img src={Trash} alt="lixo" /></button>
+            <button on onClick={() => deleteItem(description)}><img src={Trash} alt="lixo" /></button>
             </div>
           </li>
         )}

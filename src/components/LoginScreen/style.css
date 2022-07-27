@@ -50,7 +50,22 @@
 
   cursor: pointer;
 }
-
+.introduction-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:  0 auto;
+}
 .introduction-img > img {
   width: 500px;
+}
+
+@media only screen and (max-width: 850px){
+  .introduction-img > img {
+    width: 300px;
+  }
+  .introduction {
+    width: 100%;
+    height: 250px;
+  }
 }

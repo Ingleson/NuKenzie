@@ -20,10 +20,15 @@ function App() {
   const Login = () => setIsLoggedIn(true);
   const Logout = () => setIsLoggedIn(false);
 
-  const totalPrice = listTransictions.reduce((acc,{value, type} ) => type === "Entrada" ? acc + value : acc - value, 0);
+  const totalPrice = (filterTransictions.length > 0 ? filterTransictions : listTransictions).reduce((acc,{value, type} ) => type === "Entrada" ? acc + value : acc - value, 0);
 
   const addListTransiction = (newListTransiction) => {
     setListTransictions([...listTransictions, newListTransiction]);
+  }
+
+  function deleteItem( transiction ) {
+    const remaining = listTransictions.filter(({description}) => transiction !== description);
+    setListTransictions(remaining);
   }
 
   useEffect(() => {
@@ -41,7 +46,7 @@ function App() {
               <Form addListTransiction={addListTransiction} />
               {listTransictions.length > 0 ? <TotalValue totalPrice={totalPrice} /> : <div></div>}
             </div>
-            <List listTransictions={listTransictions} filterTransictions={filterTransictions} setFilter={setFilter} />
+            <List listTransictions={listTransictions} filterTransictions={filterTransictions} setFilter={setFilter} deleteItem={deleteItem} />
           </main>
         </>
         :
