@@ -1,0 +1,90 @@
+.base-form {
+  width: 300px;
+  height: 280px;
+  border: 1px solid #E9ECEF;
+  border-radius: 4px;
+}
+form {
+  margin-left: 20px;
+}
+.description-box {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 30px;
+}
+.description-box > p {
+  font-size: 10px;
+}
+.description-box > input {
+  height: 30px;
+  border: none;
+
+  width: 250px;
+
+  margin: 5px 0 3px 0;
+
+  background-color: #F8F9FA;
+}
+.description-box > span {
+  font-size: 10px;
+  color: #868E96;
+}
+.value-and-type-box {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  margin-top: 10px;
+}
+.value-box {
+  display: flex;
+  flex-direction: column;
+  width: 128px;
+}
+.value-box > p {
+  font-size: 12px;
+}
+.value-box > input {
+  height: 30px;
+  border: none;
+  background-color: #F8F9FA;
+}
+.type-box {
+  display: flex;
+  flex-direction: column;
+  width: 128px;
+}
+.type-box > p {
+  font-size: 12px;
+}
+.type-box > select {
+  height: 30px;
+  border: none;
+  background-color: #F8F9FA;
+
+  cursor: pointer;
+}
+.btn-insert {
+  margin-top: 20px;
+  width: 250px;
+  height: 40px;
+
+  border-radius: 8px;
+  border: none;
+
+  cursor: pointer;
+
+  background-color: #FD377E;
+  color: white;
+}
+
+@media only screen and (max-width: 1050px) {
+  .base-form {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 820px) {
+  .base-form {
+    margin-bottom: 0;
+  }
+}

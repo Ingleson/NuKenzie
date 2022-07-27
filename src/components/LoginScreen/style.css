@@ -1,0 +1,56 @@
+.login-screen {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+
+  color: white;
+
+  background-color: #212529;
+}
+.introduction-img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin: 0 auto;
+
+
+  width: 60%;
+}
+.introduction {
+  width: 280px;
+
+  display: flex;
+  flex-direction: column;
+
+}
+.introduction > h1 {
+  line-height: 40px;
+  font-weight: 800;
+}
+.introduction > img {
+  width: 110px;
+  margin-bottom: 15px;
+}
+.introduction > span {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.introduction > button {
+  width: 200px;
+  height: 40px;
+
+  background-color: #FD377E;
+  color: white;
+
+  border: none;
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+.introduction-img > img {
+  width: 500px;
+}
