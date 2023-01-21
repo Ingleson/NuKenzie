@@ -13,7 +13,7 @@ function LoginScreen({Login}) {
           <span>de forma rápida e segura</span>
           <button onClick={Login}>Iniciar</button>
         </div>
-        <img src={LoginPage} alt="LoginPage" />
+        <img src={LoginPage} alt="LoginPage" className='img-screen'/>
       </div>
     </section>
   )

@@ -69,3 +69,17 @@
     height: 250px;
   }
 }
+@media only screen and (max-width: 520px){
+
+  .introduction-img > .img-screen {
+    display: none;
+  }
+  .introduction {
+    
+    background-image: url("../../assets/LoginPage.svg") ;
+    background-size: 100%;
+  }
+  .introduction > h1,span{
+    text-shadow: -1px -1px 1px#212529;
+  }
+}
